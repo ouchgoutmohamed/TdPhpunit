@@ -12,12 +12,9 @@ jobs:
   phpunit:
     runs-on: ubuntu-latest  
 
-
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3  
-
-
 
       - name: Set up PHP
         uses: shivammathur/setup-php@v2  
@@ -26,13 +23,33 @@ jobs:
           extensions: mbstring, xml, curl 
           coverage: xdebug  
 
-      - name: Install dependencies
-
+      - name: Install system dependencies
         run: |
+          sudo apt-get update
           sudo apt-get install -y libxml2-dev
-          composer install --no-interaction  # Installe les dépendances via Composer
 
+      - name: Clean vendor folder and lock file
+        run: |
+          rm -rf vendor/ composer.lock
 
+      - name: Install PHP dependencies via Composer
+        run: |
+          composer install --prefer-dist --no-interaction --no-scripts
+
+      # Ensure PHPUnit is installed and the vendor directory exists
+      - name: Check if PHPUnit is installed
+        run: |
+          if [ ! -f ./vendor/bin/phpunit ]; then
+            echo "❌ PHPUnit is missing from vendor/bin/"
+            exit 1
+          fi
+
+      # Add this step to list the contents of the `vendor` directory to debug missing files
+      - name: Debug vendor directory
+        run: |
+          ls -la vendor/phpunit/phpunit/src/
+
+      # Run PHPUnit tests with verbose output
       - name: Run PHPUnit tests
         run: |
-          ./vendor/bin/phpunit --configuration phpunit.xml.dist  # Exécute PHPUnit avec votre fichier de configuration
+          ./vendor/bin/phpunit --configuration phpunit.xml.dist --verbose
