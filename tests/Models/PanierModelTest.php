@@ -20,7 +20,7 @@ class PanierModelTest extends CIUnitTestCase
     {
         $data = [
             'user_id'    => 9, 
-            'produit_id' => 101,
+            'article_id' => 101,
             'quantite'   => 5,
             'date_ajout' => date('Y-m-d H:i:s')
         ];

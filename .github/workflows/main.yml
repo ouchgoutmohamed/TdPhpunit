@@ -25,7 +25,6 @@ jobs:
 
       - name: Install system dependencies
         run: |
-          sudo apt-get update
           sudo apt-get install -y libxml2-dev
 
       - name: Clean vendor folder and lock file
@@ -36,7 +35,6 @@ jobs:
         run: |
           composer install --prefer-dist --no-interaction --no-scripts
 
-      # Ensure PHPUnit is installed and the vendor directory exists
       - name: Check if PHPUnit is installed
         run: |
           if [ ! -f ./vendor/bin/phpunit ]; then
@@ -44,12 +42,6 @@ jobs:
             exit 1
           fi
 
-      # Add this step to list the contents of the `vendor` directory to debug missing files
-      - name: Debug vendor directory
-        run: |
-          ls -la vendor/phpunit/phpunit/src/
-
-      # Run PHPUnit tests with verbose output
       - name: Run PHPUnit tests
         run: |
-          ./vendor/bin/phpunit --configuration phpunit.xml.dist 
+          ./vendor/bin/phpunit --configuration phpunit.xml.dist  # Exécute PHPUnit avec ton fichier de configuration

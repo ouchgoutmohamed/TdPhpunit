@@ -22,7 +22,7 @@ class CreatePanierTable extends Migration
                 'constraint' => 5,
                 'unsigned'   => true,
             ],
-            'produit_id' => [
+            'article_id' => [
                 'type'       => 'INT',
                 'constraint' => 5,
                 'unsigned'   => true,
