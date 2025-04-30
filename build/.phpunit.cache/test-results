@@ -1,1 +1,1 @@
-{"version":1,"defects":[],"times":{"Tests\\Support\\Models\\LigneFactureTest::testAjouterLigne":0.008,"Tests\\Support\\Models\\LigneFactureTest::testSupprimerLigne":0,"Tests\\Support\\Models\\LigneFactureTest::testViderLignes":0}}
+{"version":1,"defects":[],"times":{"Tests\\Support\\Models\\LigneFactureTest::testAjouterLigne":0.013,"Tests\\Support\\Models\\LigneFactureTest::testSupprimerLigne":0,"Tests\\Support\\Models\\LigneFactureTest::testViderLignes":0.001}}
