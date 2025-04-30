@@ -1,0 +1,39 @@
+# Composer
+/vendor
+
+
+# Environment
+.env
+*.env.*
+!*.env.example
+!*.env.testing
+
+# Writable directory (logs, cache, sessions, uploads)
+/writable/*
+!/writable/.gitkeep
+!/writable/index.html
+
+# Build artifacts
+/build
+
+# Testing
+/tests/_support/_generated
+/tests/_output
+/tests/coverage
+/tests/coverage.txt
+phpunit.xml
+.phpunit.result.cache
+.phpunit.cache/
+
+# IDE / Editor specific
+.idea/
+.vscode/
+*.sublime-*
+nbproject/
+*.swp
+
+# OS generated files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+._*

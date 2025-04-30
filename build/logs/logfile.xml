@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="Tests\Support\Models\LigneFactureTest" file="C:\xampp\htdocs\TdPhpunit\tests\Models\LigneFactureTest.php" tests="3" assertions="4" errors="0" failures="0" skipped="0" time="0.081155">
-    <testcase name="testAjouterLigne" file="C:\xampp\htdocs\TdPhpunit\tests\Models\LigneFactureTest.php" line="18" class="Tests\Support\Models\LigneFactureTest" classname="Tests.Support.Models.LigneFactureTest" assertions="2" time="0.071044"/>
-    <testcase name="testSupprimerLigne" file="C:\xampp\htdocs\TdPhpunit\tests\Models\LigneFactureTest.php" line="36" class="Tests\Support\Models\LigneFactureTest" classname="Tests.Support.Models.LigneFactureTest" assertions="1" time="0.005708"/>
-    <testcase name="testViderLignes" file="C:\xampp\htdocs\TdPhpunit\tests\Models\LigneFactureTest.php" line="55" class="Tests\Support\Models\LigneFactureTest" classname="Tests.Support.Models.LigneFactureTest" assertions="1" time="0.004403"/>
+  <testsuite name="Tests\Support\Models\LigneFactureTest" file="C:\xampp\htdocs\TdPhpunit\tests\Models\LigneFactureTest.php" tests="3" assertions="4" errors="0" failures="0" skipped="0" time="2.467765">
+    <testcase name="testAjouterLigne" file="C:\xampp\htdocs\TdPhpunit\tests\Models\LigneFactureTest.php" line="18" class="Tests\Support\Models\LigneFactureTest" classname="Tests.Support.Models.LigneFactureTest" assertions="2" time="2.459064"/>
+    <testcase name="testSupprimerLigne" file="C:\xampp\htdocs\TdPhpunit\tests\Models\LigneFactureTest.php" line="36" class="Tests\Support\Models\LigneFactureTest" classname="Tests.Support.Models.LigneFactureTest" assertions="1" time="0.004543"/>
+    <testcase name="testViderLignes" file="C:\xampp\htdocs\TdPhpunit\tests\Models\LigneFactureTest.php" line="55" class="Tests\Support\Models\LigneFactureTest" classname="Tests.Support.Models.LigneFactureTest" assertions="1" time="0.004158"/>
   </testsuite>
 </testsuites>
