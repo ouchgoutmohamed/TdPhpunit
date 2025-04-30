@@ -1,0 +1,38 @@
+name: Run PHPUnit Tests
+
+on:
+  push:
+    branches:
+      - main  
+  pull_request:
+    branches:
+      - main 
+
+jobs:
+  phpunit:
+    runs-on: ubuntu-latest  
+
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3  
+
+
+
+      - name: Set up PHP
+        uses: shivammathur/setup-php@v2  
+        with:
+          php-version: '8.2'  
+          extensions: mbstring, xml, curl 
+          coverage: xdebug  
+
+      - name: Install dependencies
+
+        run: |
+          sudo apt-get install -y libxml2-dev
+          composer install --no-interaction  # Installe les dépendances via Composer
+
+
+      - name: Run PHPUnit tests
+        run: |
+          ./vendor/bin/phpunit --configuration phpunit.xml.dist  # Exécute PHPUnit avec votre fichier de configuration
