@@ -20,8 +20,11 @@
             <html outputDirectory="build/logs/html"/>
             <php outputFile="build/logs/coverage.serialized"/>
             <text outputFile="php://stdout" showUncoveredFiles="false"/>
-        </report>
+
+        </report> -->
+    <!-- 
     </coverage> -->
+
     <testsuites>
         <testsuite name="App">
             <directory>./tests</directory>

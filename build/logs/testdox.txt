@@ -1,5 +1,7 @@
-Bon Livraison Model (Tests\Models\BonLivraisonModel)
- [x] Insert user
- [x] Find bon livraison by id
- [x] Find all bon livraison
+Ligne Livraison Model (Tests\Models\LigneLivraisonModel)
+ [x] Insert ligne livraison
+ [x] Validation fails without bon livraison id
+ [x] Find ligne livraison
+ [x] Update ligne livraison
+ [x] Delete ligne livraison
 
