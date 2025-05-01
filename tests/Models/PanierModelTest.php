@@ -18,7 +18,6 @@ class PanierModelTest extends CIUnitTestCase
         parent::setUp();
         $this->model = new PanierModel();
     }
-
     public function testInsertPanier()
     {
         $data = [
