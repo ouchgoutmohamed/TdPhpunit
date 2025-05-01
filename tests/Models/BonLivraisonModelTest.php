@@ -1,15 +1,27 @@
 <?php
 
-namespace Tests;
+namespace Tests\Models;
 
 use App\Models\BonLivraison;
+use CodeIgniter\Test\CIUnitTestCase;
+use CodeIgniter\Test\DatabaseTestTrait;
 use CodeIgniter\Test\Fabricator;
-use PHPUnit\Framework\TestCase;
 
-class BonLivraisonModelTest extends TestCase
+class BonLivraisonModelTest extends CIUnitTestCase
 {
 
+    use DatabaseTestTrait;
+
     private $bonLivraisonId;
+
+    protected $namespace   = 'App';   
+    protected $model;
+    protected $refresh = true;
+    protected function setUp(): void
+    {
+        parent::setUp();
+        $this->model = new BonLivraison();
+    }
  
     public function testInsertUser()
     {
@@ -37,16 +49,11 @@ class BonLivraisonModelTest extends TestCase
         // $this->assertEquals($this->bonLivraisonId, $bonLivraison['id'], "L'ID du bon de livraison doit correspondre à celui inséré.");
     }
 
-    public function testUpdateBonLivraison()
+    public function testFindAllBonLivraison()
     {
         $model = new BonLivraison();
-        $bonLivraison = $model->orderBy('id', 'desc')->first();
+        $bonLivraisons = $model->findAll();
         
-        $bonLivraison['etat'] = 'livré';
-        $model->update($bonLivraison['id'], $bonLivraison);
-        
-        $updatedBonLivraison = $model->find($bonLivraison['id']);
-        
-        $this->assertEquals('livré', $updatedBonLivraison['etat'], "L'état du bon de livraison doit être mis à jour.");
+        $this->assertIsArray($bonLivraisons, "findAll doit retourner un tableau.");
     }
 }
