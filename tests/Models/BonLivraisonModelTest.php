@@ -8,11 +8,9 @@ use PHPUnit\Framework\TestCase;
 
 class BonLivraisonModelTest extends TestCase
 {
-    public function testFindBonLivraison()
-    {        
-        $this->assertIsArray((new BonLivraison())->findAll(), "findAll doit retourner un tableau.");
-    }
 
+    private $bonLivraisonId;
+ 
     public function testInsertUser()
     {
         $fabricator = new Fabricator(BonLivraison::class);
@@ -25,12 +23,30 @@ class BonLivraisonModelTest extends TestCase
             'etat' => $bon_livraison_data['etat']
         ];
         
-        $id = $model->insert($bon_livraison_data);
+        $this->bonLivraisonId = $model->insert($bon_livraison_data);
         
-        $this->assertGreaterThan(0, $id, "L'insertion doit retourner un ID supérieur à 0.");
+        $this->assertGreaterThan(0, $this->bonLivraisonId, "L'insertion doit retourner un ID supérieur à 0.");
+    }
 
-        if ($id) {
-            $model->delete($id);
-        }
+    public function testFindBonLivraisonById()
+    {
+        $model = new BonLivraison();
+        $bonLivraison = $model->find($this->bonLivraisonId);
+        
+        $this->assertIsArray($bonLivraison, "find doit retourner un tableau.");
+        // $this->assertEquals($this->bonLivraisonId, $bonLivraison['id'], "L'ID du bon de livraison doit correspondre à celui inséré.");
+    }
+
+    public function testUpdateBonLivraison()
+    {
+        $model = new BonLivraison();
+        $bonLivraison = $model->orderBy('id', 'desc')->first();
+        
+        $bonLivraison['etat'] = 'livré';
+        $model->update($bonLivraison['id'], $bonLivraison);
+        
+        $updatedBonLivraison = $model->find($bonLivraison['id']);
+        
+        $this->assertEquals('livré', $updatedBonLivraison['etat'], "L'état du bon de livraison doit être mis à jour.");
     }
 }

@@ -1,5 +1,5 @@
-Ligne Facture (Tests\Support\Models\LigneFacture)
- [x] Ajouter ligne
- [x] Supprimer ligne
- [x] Vider lignes
+Bon Livraison Model (Tests\BonLivraisonModel)
+ [x] Insert user
+ [x] Find bon livraison by id
+ [x] Update bon livraison
 
