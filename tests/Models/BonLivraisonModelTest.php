@@ -31,8 +31,7 @@ class BonLivraisonModelTest extends CIUnitTestCase
         $model = new BonLivraison();
         $bon_livraison_data = [
             'dateLivraison' => $bon_livraison_data['dateLivraison'],
-            'adresseLivraison' => $bon_livraison_data['adresseLivraison'],
-            'etat' => $bon_livraison_data['etat']
+            'adresseLivraison' => $bon_livraison_data['adresseLivraison']
         ];
         
         $this->bonLivraisonId = $model->insert($bon_livraison_data);
