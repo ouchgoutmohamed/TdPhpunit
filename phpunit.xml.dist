@@ -10,7 +10,7 @@
     failOnRisky="true"
     failOnWarning="true"
     cacheDirectory="build/.phpunit.cache">
-    <coverage
+    <!-- <coverage
         includeUncoveredFiles="true"
         pathCoverage="false"
         ignoreDeprecatedCodeUnits="true"
@@ -20,8 +20,8 @@
             <html outputDirectory="build/logs/html"/>
             <php outputFile="build/logs/coverage.serialized"/>
             <text outputFile="php://stdout" showUncoveredFiles="false"/>
-        </report>
-    </coverage>
+        </report> -->
+    <!-- </coverage> -->
     <testsuites>
         <testsuite name="App">
             <directory>./tests</directory>
