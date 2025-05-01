@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="Tests\Models\FactureModelTest" file="C:\Users\hp\Desktop\TD DevOps\TdPhpunit\tests\Models\FactureModelTest.php" tests="4" assertions="8" errors="0" failures="0" skipped="0" time="0.122689">
-    <testcase name="testInsertFacture" file="C:\Users\hp\Desktop\TD DevOps\TdPhpunit\tests\Models\FactureModelTest.php" line="17" class="Tests\Models\FactureModelTest" classname="Tests.Models.FactureModelTest" assertions="3" time="0.098269"/>
-    <testcase name="testFindAllFactures" file="C:\Users\hp\Desktop\TD DevOps\TdPhpunit\tests\Models\FactureModelTest.php" line="34" class="Tests\Models\FactureModelTest" classname="Tests.Models.FactureModelTest" assertions="1" time="0.003842"/>
-    <testcase name="testUpdateFacture" file="C:\Users\hp\Desktop\TD DevOps\TdPhpunit\tests\Models\FactureModelTest.php" line="40" class="Tests\Models\FactureModelTest" classname="Tests.Models.FactureModelTest" assertions="2" time="0.010151"/>
-    <testcase name="testDeleteFacture" file="C:\Users\hp\Desktop\TD DevOps\TdPhpunit\tests\Models\FactureModelTest.php" line="57" class="Tests\Models\FactureModelTest" classname="Tests.Models.FactureModelTest" assertions="2" time="0.010428"/>
+  <testsuite name="Tests\Models\FactureModelTest" file="C:\Users\hp\Desktop\TD DevOps\TdPhpunit\tests\Models\FactureModelTest.php" tests="3" assertions="3" errors="0" failures="0" skipped="0" time="0.321545">
+    <testcase name="testInsertFacture" file="C:\Users\hp\Desktop\TD DevOps\TdPhpunit\tests\Models\FactureModelTest.php" line="26" class="Tests\Models\FactureModelTest" classname="Tests.Models.FactureModelTest" assertions="1" time="0.177236"/>
+    <testcase name="testFindFactureById" file="C:\Users\hp\Desktop\TD DevOps\TdPhpunit\tests\Models\FactureModelTest.php" line="43" class="Tests\Models\FactureModelTest" classname="Tests.Models.FactureModelTest" assertions="1" time="0.074323"/>
+    <testcase name="testFindAllFactures" file="C:\Users\hp\Desktop\TD DevOps\TdPhpunit\tests\Models\FactureModelTest.php" line="52" class="Tests\Models\FactureModelTest" classname="Tests.Models.FactureModelTest" assertions="1" time="0.069986"/>
   </testsuite>
 </testsuites>

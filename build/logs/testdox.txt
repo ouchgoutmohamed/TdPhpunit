@@ -1,6 +1,5 @@
 Facture Model (Tests\Models\FactureModel)
  [x] Insert facture
+ [x] Find facture by id
  [x] Find all factures
- [x] Update facture
- [x] Delete facture
 

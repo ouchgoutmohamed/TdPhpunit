@@ -4,34 +4,34 @@ namespace App\Database\Migrations;
 
 use CodeIgniter\Database\Migration;
 
-class CreateFacturesTable extends Migration
+class CreateFactureTable extends Migration
 {
     public function up()
     {
         $this->forge->addField([
-            'id'         => [
+            'id' => [
                 'type'           => 'INT',
                 'constraint'     => 11,
                 'unsigned'       => true,
                 'auto_increment' => true,
             ],
-            'dateFact'   => [
+            'dateFact' => [
                 'type'       => 'DATE',
                 'null'       => false,
             ],
-            'client'     => [
+            'client' => [
                 'type'       => 'VARCHAR',
                 'constraint' => 255,
                 'null'       => false,
             ],
-            'total'      => [
+            'total' => [
                 'type'       => 'DECIMAL',
                 'constraint' => '10,2',
                 'null'       => false,
             ],
         ]);
-        $this->forge->addKey('id', true); // primary key
-        $this->forge->createTable('db_factures');
+        $this->forge->addKey('id', true);
+        $this->forge->createTable('factures');
     }
 
     public function down()
