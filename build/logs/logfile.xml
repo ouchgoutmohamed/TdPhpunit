@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="Tests\Models\FactureModelTest" file="C:\Users\hp\Desktop\TD DevOps\TdPhpunit\tests\Models\FactureModelTest.php" tests="3" assertions="3" errors="0" failures="0" skipped="0" time="0.321545">
-    <testcase name="testInsertFacture" file="C:\Users\hp\Desktop\TD DevOps\TdPhpunit\tests\Models\FactureModelTest.php" line="26" class="Tests\Models\FactureModelTest" classname="Tests.Models.FactureModelTest" assertions="1" time="0.177236"/>
-    <testcase name="testFindFactureById" file="C:\Users\hp\Desktop\TD DevOps\TdPhpunit\tests\Models\FactureModelTest.php" line="43" class="Tests\Models\FactureModelTest" classname="Tests.Models.FactureModelTest" assertions="1" time="0.074323"/>
-    <testcase name="testFindAllFactures" file="C:\Users\hp\Desktop\TD DevOps\TdPhpunit\tests\Models\FactureModelTest.php" line="52" class="Tests\Models\FactureModelTest" classname="Tests.Models.FactureModelTest" assertions="1" time="0.069986"/>
+  <testsuite name="Tests\Models\BonLivraisonModelTest" file="C:\Users\hp\Desktop\TD DevOps\TdPhpunit\tests\Models\BonLivraisonModelTest.php" tests="3" assertions="3" errors="0" failures="0" skipped="0" time="0.341699">
+    <testcase name="testInsertUser" file="C:\Users\hp\Desktop\TD DevOps\TdPhpunit\tests\Models\BonLivraisonModelTest.php" line="26" class="Tests\Models\BonLivraisonModelTest" classname="Tests.Models.BonLivraisonModelTest" assertions="1" time="0.188646"/>
+    <testcase name="testFindBonLivraisonById" file="C:\Users\hp\Desktop\TD DevOps\TdPhpunit\tests\Models\BonLivraisonModelTest.php" line="42" class="Tests\Models\BonLivraisonModelTest" classname="Tests.Models.BonLivraisonModelTest" assertions="1" time="0.073759"/>
+    <testcase name="testFindAllBonLivraison" file="C:\Users\hp\Desktop\TD DevOps\TdPhpunit\tests\Models\BonLivraisonModelTest.php" line="51" class="Tests\Models\BonLivraisonModelTest" classname="Tests.Models.BonLivraisonModelTest" assertions="1" time="0.079294"/>
   </testsuite>
 </testsuites>
