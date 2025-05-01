@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="Tests\Models\BonLivraisonModelTest" file="C:\Users\hp\Desktop\TD DevOps\TdPhpunit\tests\Models\BonLivraisonModelTest.php" tests="3" assertions="3" errors="0" failures="0" skipped="0" time="0.341699">
-    <testcase name="testInsertUser" file="C:\Users\hp\Desktop\TD DevOps\TdPhpunit\tests\Models\BonLivraisonModelTest.php" line="26" class="Tests\Models\BonLivraisonModelTest" classname="Tests.Models.BonLivraisonModelTest" assertions="1" time="0.188646"/>
-    <testcase name="testFindBonLivraisonById" file="C:\Users\hp\Desktop\TD DevOps\TdPhpunit\tests\Models\BonLivraisonModelTest.php" line="42" class="Tests\Models\BonLivraisonModelTest" classname="Tests.Models.BonLivraisonModelTest" assertions="1" time="0.073759"/>
-    <testcase name="testFindAllBonLivraison" file="C:\Users\hp\Desktop\TD DevOps\TdPhpunit\tests\Models\BonLivraisonModelTest.php" line="51" class="Tests\Models\BonLivraisonModelTest" classname="Tests.Models.BonLivraisonModelTest" assertions="1" time="0.079294"/>
+  <testsuite name="Tests\Models\LigneLivraisonModelTest" file="C:\Users\AdMin\Documents\ingenerie-logiciel\master\2s\devops\projetdevops\codeigniter\tests\Models\LigneLivraisonModelTest.php" tests="5" assertions="13" errors="0" failures="0" skipped="0" time="0.340553">
+    <testcase name="testInsertLigneLivraison" file="C:\Users\AdMin\Documents\ingenerie-logiciel\master\2s\devops\projetdevops\codeigniter\tests\Models\LigneLivraisonModelTest.php" line="37" class="Tests\Models\LigneLivraisonModelTest" classname="Tests.Models.LigneLivraisonModelTest" assertions="3" time="0.134338"/>
+    <testcase name="testValidationFailsWithoutBonLivraisonId" file="C:\Users\AdMin\Documents\ingenerie-logiciel\master\2s\devops\projetdevops\codeigniter\tests\Models\LigneLivraisonModelTest.php" line="52" class="Tests\Models\LigneLivraisonModelTest" classname="Tests.Models.LigneLivraisonModelTest" assertions="2" time="0.025387"/>
+    <testcase name="testFindLigneLivraison" file="C:\Users\AdMin\Documents\ingenerie-logiciel\master\2s\devops\projetdevops\codeigniter\tests\Models\LigneLivraisonModelTest.php" line="69" class="Tests\Models\LigneLivraisonModelTest" classname="Tests.Models.LigneLivraisonModelTest" assertions="3" time="0.044325"/>
+    <testcase name="testUpdateLigneLivraison" file="C:\Users\AdMin\Documents\ingenerie-logiciel\master\2s\devops\projetdevops\codeigniter\tests\Models\LigneLivraisonModelTest.php" line="86" class="Tests\Models\LigneLivraisonModelTest" classname="Tests.Models.LigneLivraisonModelTest" assertions="2" time="0.061225"/>
+    <testcase name="testDeleteLigneLivraison" file="C:\Users\AdMin\Documents\ingenerie-logiciel\master\2s\devops\projetdevops\codeigniter\tests\Models\LigneLivraisonModelTest.php" line="107" class="Tests\Models\LigneLivraisonModelTest" classname="Tests.Models.LigneLivraisonModelTest" assertions="3" time="0.075278"/>
   </testsuite>
 </testsuites>
