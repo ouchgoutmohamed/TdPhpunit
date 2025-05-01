@@ -1,0 +1,52 @@
+<?php
+namespace App\Controllers;
+
+use App\Models\LigneFactureModel;
+use CodeIgniter\Controller;
+
+class LigneFactureController extends Controller
+{
+    protected $ligneFactureModel;
+
+    public function __construct()
+    {
+        $this->ligneFactureModel = new LigneFactureModel();
+    }
+
+    public function ajouterLigne()
+    {
+        $ligne = [
+            'facture_id'    => 1,
+            'description'   => 'Service A',
+            'quantite'      => 2,
+            'prix_unitaire' => 100
+        ];
+
+        // Appeler la méthode ajouterLigne du modèle
+        $this->ligneFactureModel->ajouterLigne($ligne);
+
+        return redirect()->to('/lignes')->with('message', 'Ligne ajoutée avec succès');
+    }
+
+    public function supprimerLigne($description)
+    {
+        // Appeler la méthode supprimerLigne du modèle
+        $this->ligneFactureModel->supprimerLigne($description);
+
+        return redirect()->to('/lignes')->with('message', 'Ligne supprimée avec succès');
+    }
+
+    public function viderLignes()
+    {
+        // Appeler la méthode viderLignes du modèle
+        $this->ligneFactureModel->viderLignes();
+
+        return redirect()->to('/lignes')->with('message', 'Toutes les lignes ont été supprimées');
+    }
+
+    public function afficherLignes()
+    {
+        $lignes = $this->ligneFactureModel->getLignes();
+        return view('lignes_facture', ['lignes' => $lignes]);
+    }
+}
