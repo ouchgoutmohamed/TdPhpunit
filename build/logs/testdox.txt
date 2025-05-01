@@ -1,5 +1,5 @@
-Bon Livraison Model (Tests\BonLivraisonModel)
+Bon Livraison Model (Tests\Models\BonLivraisonModel)
  [x] Insert user
  [x] Find bon livraison by id
- [x] Update bon livraison
+ [x] Find all bon livraison
 
